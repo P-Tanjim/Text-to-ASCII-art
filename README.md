@@ -25,9 +25,10 @@ While this project is designed to be expandable, here are some examples of the A
 * Letter 'I': A simple yet clear depiction of the letter I.
 * Letter 'M': The letter M with a striking design.
 
-```
 ## Example Output
 Below is a combined representation of what the script might output when executed. Due to the nature of ASCII art, the actual output in your terminal will be larger and more visually distinct.
+
+```
 
 tttttttttttttttttttttttttttttt
 tttttttttttttttttttttttttttttt

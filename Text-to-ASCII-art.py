@@ -1,85 +1,93 @@
 
+
 def print_A():
     c = "a"
+    s = ' '
     # top of A
-    for i in range(1, 8, 2):
-        print((c*i).center(30))
+    for i in range(1, 7, 2):
+        print((c*(i+2)).center(30))
     #top gap of A
     for i in range(1, 5):
-        print((((c*2) + " "*(2*i + 1) + (c*4)).center(30)))
+        print((((c*2) + s*(2*i + 1) + (c*4)).center(30)))
     #middle of A
     print((c*17).center(30))
     #bottom gap
     for i in range(5, 8):
-        print(((c*2) + " "*(2*i+3) + (c*4)).center(29))
+        print(((c*2) + s*(2*i+3) + (c*4)).center(30))
     #bottom
-    print(((c*4) + " "*15 + (c*7)).rjust(28))
+    print(((c*4) + s*15 + (c*7)).center(30))
 
 def print_B():
     c = "b"
-    print((c*22))
+    s = " "
+    print((c*22) + (s * 3))
     for i in range(2):
-        print((c*4) + (c*4).rjust((18 + (i+1))))
+        print((c*4) + (c*4).rjust((18 + (i+1))) + s* ( 2 - i))
     for i in range(3, 0, -1):
-        print((c*4) + (c*4).rjust((18 + i)))
-    print((c*22))
+        print((c*4) + (c*4).rjust((18 + i)) + s* ( 3 - i))
+    print((c*22) + (s * 3))    
     for i in range(2):
-        print((c*4) + (c*4).rjust((18 + (i+1))))
+        print((c*4) + (c*4).rjust((18 + (i+1))) + s* ( 2 - i))
     for i in range(3, 0, -1):
-        print((c*4) + (c*4).rjust((18 + i)))
-    print((c*22))
+        print((c*4) + (c*4).rjust((18 + i)) + s* ( 3 - i))
+    print((c*22) + (s * 3))
 
 def print_C():
     c = 'c'
+    s = " "
     print((c*22).center(30))
-    print(((c*4) + (" ") * 18 + (c*4)).center(30))
+    print(((c*4) + s * 18 + (c*4)).center(30))
     for i in range(2):
-        print((c*4) +  (" ") * (20 + i+1) + (c*4))
+        print((c*4) +  s * (20 + i+1) + (c*4) + s * (1-i))
     for i in range(6):
-        print((c*4))
+        print((c*4) + s*26)
     for i in range(2):
-        print(((c*4) + (" ") * (21 - i*2) + (c*4)).center(30))
+        print(((c*4) + s * (21 - i*2) + (c*4)).center(30))
     print((c*22).center(30))
 
 def print_D():
     c = 'd'
+    s = ' '
     for i in range(1, 4, 2):
-        print((c*(20 + i)))
+        print((c*(20 + i) + s*(8 - i)))
     for i in range(4):
-        print((c*4) + (" ") * (17 + i) + (c*4))
+        print((c*4) + s * (17 + i) + (c*4) + s* (3 - i))
     for i in range(4):
-        print((c*4) + (" ") * (20 - i) + (c*4))
+        print((c*4) + s * (20 - i) + (c*4) + s* (i))
     for i in range(0, 3, 2):
-        print((c*(23 - i)))
+        print((c*(23 - i) + s*(5+ i)))
 
 def print_E():
     c = "e"
+    s = " "
     for _ in range(2):
         for _ in range(2):
             print((c*25))
         for _ in range(3):
-            print((c*6))
+            print((c*6) + s*19)
     for _ in range(2):
             print((c*25))
 
 def print_F():
     c = "f"
+    s = " "
     for _ in range(2):
         for _ in range(2):
             print((c*25))
         for _ in range(3):
-            print((c*6))
-    for _ in range(3):
-            print((c*6))
+            print((c*6) + s*19)
+    for _ in range(2):
+            print((c*6) + s*19)
 
 def print_G():
     c = "g"
+    s = " "
     for i in range(2):
         print((c * (20 + i * 4)).center(30))
     for i in range(4):
-        print((c*4))
+        print((c*4) + s * 26)
     for i in range(4):
-        print((c*4) + (c*(10 - i*2)).rjust(24))
+        print((c*4) + (c*(10 - i*2)).rjust(24) + s * 2)
     for i in range(2):
         print((c * (25 - i * 4)).center(30))
 
@@ -89,7 +97,7 @@ def print_H():
         print((c*4) + (c*4).rjust(21))
     for i in range(3):
         print((c*25))
-    for i in range(6):
+    for i in range(5):
         print((c*4) + (c*4).rjust(21))
 
 def print_I():
@@ -103,99 +111,109 @@ def print_I():
 
 def print_J():
     c = 'j'
+    s = " "
     for i in range(8):
         print((c*5).rjust(20))
     for i in range(3):
-        print((c*(8-i)).rjust(8)+(""*7).center(7) + (c*(5-i)))
-    print((c*13).rjust(17))
+        print((c*(8-i)).rjust(8)+ s*7 + (c*(5-i)).ljust(5))
+    print((c*13).rjust(17) + s*3)
 
 def print_K():
     c = "k"
+    s = " "
     for i in range(6):
-        print((c*5) + ("  ") * (5 - i) + (c*5))
+        print((c*5) + s * (10 - i*2) + (c*5) + s *( i *2))
     for i in range(6):
-        print((c*5) + ("  ") * (0 + i) + (c*5))
+        print((c*5) + s * i * 2 + (c*5) + s * (10 - (i*2)))
 
 def print_L():
     c = "l"
+    s = " "
     for i in range(9):
-        print(c*6)
+        print(c*6 + s*19)
     for i in range(3):
         print(c*25)
 
 def print_M():
     c = 'm'
+    s = " "
     for i in range(12):
         # print((c*4)+(" "*((i*2)//2))+(c*4)+(" "*(11-((i*2)//2)))+(c*4).rjust(15-((i*2)//2))+(" "*((i*2)//2))+(c*4))
-        print((c*3) + (" ") * ( i) + (c*3) + (" ") * (22 - i*2) + (c*3) + (" ") * ( i) + (c*3)) # work same but easy to understand
+        print((c*3) + s * ( i) + (c*3) + s * (22 - i*2) + (c*3) + s * ( i) + (c*3)) # work same but easy to understand
 
 def print_N():
     c = 'n'
+    s = " "
     for i in range(12):
-        print((c*4)+(" "*((i*2)//2))+(c*4)+(c*4).rjust(15-((i*2)//2)))
+        print((c*4)+(s*((i*2)//2))+(c*4)+(c*4).rjust(15-((i*2)//2)))
 
 def print_O():
     c = "o"
+    s = " "
     for i in range(1, -1, -1):
         print((c*(23 - i * 2)).center(29))
     for i in range(1, -1, -1):
-        print(((c*4) + (" ") * (19 - i * 2)+ (c*4)).center(29))
+        print(((c*4) + s * (19 - i * 2)+ (c*4)).center(29))
     for i in range(4):
         print((c*4) + ((c*4)).rjust(25))
     for i in range(2):
-        print(((c*4) + (" ") * (19 - i * 2)+ (c*4)).center(29))
+        print(((c*4) + s * (19 - i * 2)+ (c*4)).center(29))
     for i in range(2):
         print((c*(23 - i * 2)).center(29))
 
 def print_P():
     c = "p"
-    print((c*18))
+    s = " "
+    print((c*18) + s * 4)
     for i in range(2):
-        print((c*4) + (c*3).rjust((15 + (i+1))))
+        print((c*4) + s * (13 + i) + (c*3) + s*(2-i))
     for i in range(3, 0, -1):
-        print((c*4) + (c*3).rjust((15 + i)))
-    print((c*18))
+        print((c*4) + s * (15 - (3 - i)) + (c*3) + s * (3 - i))
+    print((c*18) + s * 4)
     for i in range(6):
-        print((c*4))
+        print((c*4) + s * 18)
 
 def print_Q():
     c = "q"
+    s = ' '
     for i in range(1, -1, -1):
-        print((c*(23 - i * 2)).center(29))
+        print((c*(23 - i * 2)).center(29) + s * 2)
     for i in range(1, -1, -1):
-        print(((c*4) + (" ") * (19 - i * 2)+ (c*4)).center(29))
+        print(((c*4) + s * (19 - i * 2)+ (c*4)).center(29)+ s * 2)
     for i in range(4):
         if i == 3:
-            print((c*4) + ((c*2) + (" ") * 4 + (c*4)).rjust(25))
+            print((c*4) + ((c*2) + s * 4 + (c*4)).rjust(25)+ s * 2)
         else:
-            print((c*4) + ((c*4)).rjust(25))
+            print((c*4) + ((c*4)).rjust(25)+ s * 2)
     for i in range(2):
-        print(((c*4) + (" ") * (16)+ (c*2) * ( 1 - i) + (" ") * (1)+ (c*4)).center(29))
+        print(((c*4) + s * (16)+ (c*2) * ( 1 - i) + s * (1)+ (c*4)).center(29)+ s * 2)
     for i in range(2):
-        print((c*(23 - i * 2) + (" ") * i).rjust(26) + ((" ") * (i*2)) + (" ")+ (c*2))
+        print((c*(23 - i * 2) + s * i).rjust(26) + (s * (i*2)) + s+ (c*2)+ s * (2-(i*2)))
 
 def print_R():
     c = 'r'
-    print((c*18))
+    s = " "
+    print((c*18) + s * 4)
     for i in range(2):
-        print((c*4) + (c*4).rjust((15 + (i+1))))
+        print((c*4) + s * (12 + i)+ (c*4) + s * (2 -i))
     for i in range(3, 0, -1):
-        print((c*4) + (c*4).rjust((15 + i)))
-    print((c*18))
-    for i in range(5):
-        print((c*4) + ("  ") * ( i) + (c*4) )
+        print((c*4) + s * (14 - (3-i))+ (c*4) + s *(3 - i))
+    print((c*18) + s * 4)
+    for i in range(6):
+        print((c*4) + ("  ") * ( i) + (c*4) + s * (14 - (i*2)) )
 
 def print_S():
     c = "s"
+    s = ' '
     for i in range(2):
-        print((c * (20 + i * 4)).center(30))
+        print(s * (5 - (i*3)) + (c * (20 + i * 4)) + s* (3 -i))
     for i in range(4):
         print((c*4) + (c*(10 - i*2 - 4)).rjust(24))
-    print((c * (20 +4)).rjust(24))
+    print((c * (20 +4)) + s * 4)
     for i in range(3, -1 , -1):
         print((c*(10 - i*2 - 4))+(" ") * i * 2 + (c*4).rjust(22)  )
     for i in range(1, -1, -1):
-        print((c * (20 + i * 4)).center(30))
+        print((s * (3 + (1 - i) * 2) + c * (20 + i * 4) + s * (3-(i*2))))
 
 def print_T():
     c = 't'
@@ -215,25 +233,28 @@ def print_U():
 
 def print_V():
     c = "v"
+    s = ' '
     for i in range(12):
-        print( (" ") * i+(c*4) + (" ") * (22 - (i*2))+ ((c*4)))
+        print( s * i+(c*4) + s * (22 - (i*2))+ ((c*4)) + s * i)
 
 def print_W():
     c = "w"
+    s = " "
     for i in range(12):
-        print((c*3) + (" ") * (- i) + ((c*3).rjust(14 - i)) + ((c*3).rjust(3 + i))  + (" ") * (-i)+  ((c*3).rjust(14 - i)))
+        print((c*3) + s * (- i) + ((c*3).rjust(14 - i)) + ((c*3).rjust(3 + i))  + s * (-i)+  ((c*3).rjust(14 - i)) + s * i)
 
 def print_X():
     c = 'x'
-    for i in range(6):
-        print(((c*5) + ("  ") * (9 - i * 2)+ (c*5)).center(30))
+    s = "  "
+    for i in range(5):
+        print(((c*5) + s * (9 - i * 2)+ (c*5)).center(30))
     for i in range(6, -1, -1):
-        print(((c*5) + ("  ") * (11 - i * 2)+ (c*5)).center(30))
+        print(((c*5) + s * (9 - i * 2)+ (c*5)).center(30))
 
 def print_Y():
     c = 'y'
     for i in range(6):
-        print(((c*5) + ("  ") * (11 - i * 2)+ (c*5)).center(30))
+        print(((c*5) + ("  ") * (9 - i * 2)+ (c*5)).center(30))
     for i in range(6):
         print((c*4).center(30))
 
@@ -242,10 +263,9 @@ def print_Z():
     for i in range(2):
         print(c*25)
     for i in range(1, 9):
-        print((c*7).rjust((25 - i*2)))
+        print((c*7).rjust((25 - i*2)) + (" ") * (i *2))
     for i in range(2):
         print(c*25)
-
 
 name = (input("Enter your name: ")).lower()
 

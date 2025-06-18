@@ -29,30 +29,18 @@ Here’s what you might see when you input the word TANJIM:
 ```
 markdown
 
-tttttttttttttttttttttttttttttt               aaa                nnnnnnnn           nnnn                 jjjjj  iiiiiiiiiiiiiiiiiiiiiiiii  
-tttttttttttttttttttttttttttttt              aaaaa               nnnn nnnn          nnnn                 jjjjj  iiiiiiiiiiiiiiiiiiiiiiiii  
-tttttttttttttttttttttttttttttt             aaaaaaa              nnnn  nnnn         nnnn                 jjjjj             iiii
-            tttttt                        aa   aaaa             nnnn   nnnn        nnnn                 jjjjj             iiii
-            tttttt                       aa     aaaa            nnnn    nnnn       nnnn                 jjjjj             iiii
-            tttttt                      aa       aaaa           nnnn     nnnn      nnnn                 jjjjj             iiii
-            tttttt                     aa         aaaa          nnnn      nnnn     nnnn                 jjjjj             iiii
-            tttttt                    aaaaaaaaaaaaaaaaa         nnnn       nnnn    nnnn                 jjjjj             iiii
-            tttttt                   aa             aaaa        nnnn        nnnn   nnnn  jjjjjjjj       jjjjj             iiii
-            tttttt                  aa               aaaa       nnnn         nnnn  nnnn   jjjjjjj       jjjj              iiii
-            tttttt                 aa                 aaaa      nnnn          nnnn nnnn    jjjjjj       jjj    iiiiiiiiiiiiiiiiiiiiiiiii
-            tttttt                aaaa               aaaaaaa    nnnn           nnnnnnnn      jjjjjjjjjjjjj     iiiiiiiiiiiiiiiiiiiiiiiii  
-mmmmmm                      mmmmmm  
-mmm mmm                    mmm mmm  
-mmm  mmm                  mmm  mmm
-mmm   mmm                mmm   mmm
-mmm    mmm              mmm    mmm
-mmm     mmm            mmm     mmm
-mmm      mmm          mmm      mmm
-mmm       mmm        mmm       mmm
-mmm        mmm      mmm        mmm
-mmm         mmm    mmm         mmm
-mmm          mmm  mmm          mmm
-mmm           mmmmmm           mmm
+tttttttttttttttttttttttttttttt               aaa                nnnnnnnn           nnnn                 jjjjj  iiiiiiiiiiiiiiiiiiiiiiiii  mmmmmm                      mmmmmm  
+tttttttttttttttttttttttttttttt              aaaaa               nnnn nnnn          nnnn                 jjjjj  iiiiiiiiiiiiiiiiiiiiiiiii  mmm mmm                    mmm mmm  
+tttttttttttttttttttttttttttttt             aaaaaaa              nnnn  nnnn         nnnn                 jjjjj             iiii            mmm  mmm                  mmm  mmm  
+            tttttt                        aa   aaaa             nnnn   nnnn        nnnn                 jjjjj             iiii            mmm   mmm                mmm   mmm  
+            tttttt                       aa     aaaa            nnnn    nnnn       nnnn                 jjjjj             iiii            mmm    mmm              mmm    mmm  
+            tttttt                      aa       aaaa           nnnn     nnnn      nnnn                 jjjjj             iiii            mmm     mmm            mmm     mmm  
+            tttttt                     aa         aaaa          nnnn      nnnn     nnnn                 jjjjj             iiii            mmm      mmm          mmm      mmm  
+            tttttt                    aaaaaaaaaaaaaaaaa         nnnn       nnnn    nnnn                 jjjjj             iiii            mmm       mmm        mmm       mmm  
+            tttttt                   aa             aaaa        nnnn        nnnn   nnnn  jjjjjjjj       jjjjj             iiii            mmm        mmm      mmm        mmm  
+            tttttt                  aa               aaaa       nnnn         nnnn  nnnn   jjjjjjj       jjjj              iiii            mmm         mmm    mmm         mmm  
+            tttttt                 aa                 aaaa      nnnn          nnnn nnnn    jjjjjj       jjj    iiiiiiiiiiiiiiiiiiiiiiiii  mmm          mmm  mmm          mmm  
+            tttttt                aaaa               aaaaaaa    nnnn           nnnnnnnn      jjjjjjjjjjjjj     iiiiiiiiiiiiiiiiiiiiiiiii  mmm           mmmmmm           mmm  
 
 tttttttttttttttttttttttttttttt
 tttttttttttttttttttttttttttttt

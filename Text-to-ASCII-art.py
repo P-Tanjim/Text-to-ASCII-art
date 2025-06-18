@@ -268,6 +268,92 @@ def print_Z():
 
 name = (input("Enter your name: ")).lower()
 
+#-----------------HORIZONTAL PRINT------------------
+def capture_output(func):
+    from io import StringIO
+    import sys
+    def wrapper():
+        old_stdout = sys.stdout
+        sys.stdout = buffer = StringIO()
+        func()
+        sys.stdout = old_stdout
+        return buffer.getvalue().splitlines()
+    return wrapper
+
+print_functions = {
+    'a': capture_output(print_A),
+    'b': capture_output(print_B),
+    'c': capture_output(print_C),
+    'd': capture_output(print_D),
+    'e': capture_output(print_E),
+    'f': capture_output(print_F),
+    'g': capture_output(print_G),
+    'h': capture_output(print_H),
+    'i': capture_output(print_I),
+    'j': capture_output(print_J),
+    'k': capture_output(print_K),
+    'l': capture_output(print_L),
+    'm': capture_output(print_M),
+    'n': capture_output(print_N),
+    'o': capture_output(print_O),
+    'p': capture_output(print_P),
+    'q': capture_output(print_Q),
+    'r': capture_output(print_R),
+    's': capture_output(print_S),
+    't': capture_output(print_T),
+    'u': capture_output(print_U),
+    'v': capture_output(print_V),
+    'w': capture_output(print_W),
+    'x': capture_output(print_X),
+    'y': capture_output(print_Y),
+    'z': capture_output(print_Z),
+}
+
+import shutil
+MAX_LINE_WIDTH = shutil.get_terminal_size().columns - 5
+
+
+letter_blocks = []
+for ch in name:
+    if ch in print_functions:
+        lines = print_functions[ch]()
+        visible_lines = [line.rstrip() for line in lines if line.strip()]
+        width = max(len(line) for line in visible_lines) if visible_lines else 0
+
+        letter_blocks.append((lines, width))
+
+rows = []
+current_row = []
+current_width = 0
+
+for block, width in letter_blocks:
+    if current_width + width + 2 > MAX_LINE_WIDTH:
+        rows.append(current_row)
+        current_row = [(block, width)]
+        current_width = width + 2
+    else:
+        current_row.append((block, width))
+        current_width += width + 2
+
+if current_row:
+    rows.append(current_row)
+
+# Print each row side by side
+for row in rows:
+    max_height = max(len(block[0]) for block in row)
+    padded_blocks = []
+    for lines, width in row:
+        padded = lines + [" " * width] * (max_height - len(lines))
+        padded_blocks.append(padded)
+    
+    for i in range(max_height):
+        line = ""
+        for idx, block in enumerate(padded_blocks):
+            line += block[i] + "  "  # space between letters
+        print(line)
+
+
+# ---------------VERTICAL PRINT-------------------
 for chr in name:
     if chr == 'a':
         print_A()

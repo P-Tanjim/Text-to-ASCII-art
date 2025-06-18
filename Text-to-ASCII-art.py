@@ -11,7 +11,7 @@ def print_A():
     #middle of A
     print((c*17).center(30))
     #bottom gap
-    for i in range(5, 8):
+    for i in range(5, 9):
         print(((c*2) + s*(2*i+3) + (c*4)).center(30))
     #bottom
     print(((c*4) + s*15 + (c*7)).center(30))
@@ -96,7 +96,7 @@ def print_H():
         print((c*4) + (c*4).rjust(21))
     for i in range(3):
         print((c*25))
-    for i in range(5):
+    for i in range(4):
         print((c*4) + (c*4).rjust(21))
 
 def print_I():
@@ -351,7 +351,7 @@ for row in rows:
         for idx, block in enumerate(padded_blocks):
             line += block[i] + "  "  # space between letters
         print(line)
-
+print()
 
 # ---------------VERTICAL PRINT-------------------
 for chr in name:

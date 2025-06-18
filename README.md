@@ -18,7 +18,7 @@ The script includes:
 
 * A function for each letter from A to Z (e.g., print_A(), print_B(), ... print_Z()).
 
-* A main loop that takes a string input from the user and prints each character's ASCII representation line by line.
+* A main loop that takes a string input from the user and prints each character's ASCII representation (side by side) and (line by line).
 
 * Line breaks between each character for better visual separation.
 
@@ -28,6 +28,31 @@ This structure makes it easy to expand or customize how characters are displayed
 Here’s what you might see when you input the word TANJIM:
 ```
 markdown
+
+tttttttttttttttttttttttttttttt               aaa                nnnnnnnn           nnnn                 jjjjj  iiiiiiiiiiiiiiiiiiiiiiiii  
+tttttttttttttttttttttttttttttt              aaaaa               nnnn nnnn          nnnn                 jjjjj  iiiiiiiiiiiiiiiiiiiiiiiii  
+tttttttttttttttttttttttttttttt             aaaaaaa              nnnn  nnnn         nnnn                 jjjjj             iiii
+            tttttt                        aa   aaaa             nnnn   nnnn        nnnn                 jjjjj             iiii
+            tttttt                       aa     aaaa            nnnn    nnnn       nnnn                 jjjjj             iiii
+            tttttt                      aa       aaaa           nnnn     nnnn      nnnn                 jjjjj             iiii
+            tttttt                     aa         aaaa          nnnn      nnnn     nnnn                 jjjjj             iiii
+            tttttt                    aaaaaaaaaaaaaaaaa         nnnn       nnnn    nnnn                 jjjjj             iiii
+            tttttt                   aa             aaaa        nnnn        nnnn   nnnn  jjjjjjjj       jjjjj             iiii
+            tttttt                  aa               aaaa       nnnn         nnnn  nnnn   jjjjjjj       jjjj              iiii
+            tttttt                 aa                 aaaa      nnnn          nnnn nnnn    jjjjjj       jjj    iiiiiiiiiiiiiiiiiiiiiiiii
+            tttttt                aaaa               aaaaaaa    nnnn           nnnnnnnn      jjjjjjjjjjjjj     iiiiiiiiiiiiiiiiiiiiiiiii  
+mmmmmm                      mmmmmm  
+mmm mmm                    mmm mmm  
+mmm  mmm                  mmm  mmm
+mmm   mmm                mmm   mmm
+mmm    mmm              mmm    mmm
+mmm     mmm            mmm     mmm
+mmm      mmm          mmm      mmm
+mmm       mmm        mmm       mmm
+mmm        mmm      mmm        mmm
+mmm         mmm    mmm         mmm
+mmm          mmm  mmm          mmm
+mmm           mmmmmm           mmm
 
 tttttttttttttttttttttttttttttt
 tttttttttttttttttttttttttttttt
@@ -112,6 +137,8 @@ mmmm           mmmmmmmm           mmmm
 ## Features
 * Full alphabet coverage (A–Z)
 
+* Horizontal and Vertical Print
+
 * Clean line breaks between characters
 
 * Easy to customize fonts per letter
@@ -138,8 +165,6 @@ You're welcome to improve or expand the project! Some ideas:
 * Add numbers (0–9)
 
 * Add symbols (e.g., !, ?, #)
-
-* Add color support using third-party libraries like colorama
 
 * Create stylized fonts/themes
 
